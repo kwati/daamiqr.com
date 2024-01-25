@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile First Webpage</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<audio id="cta-audio" src="assets/media/cheer.mp3" type="audio/mpeg"></audio>
+
+<div class="page-container">
+    <div class="header">
+        <img src="assets/media/icon.png" alt="Icon" class="header-icon">
+    </div>
+    <div class="content">
+        <p>खल्तीलाई यस उचाईसम्म ल्याउनका लागि तपाईंले गर्नुभएको हरेक प्रयासका लागि <span style="font-weight: 800;">हामी धेरै आभारी छौं। </span> हरेक चुनौती र अवसरमा तपाईंहरुको उत्साह र लगनशीलताले हाम्रो साझा यात्रालाई थप बलियो बनाउँछ। तपाईंहरूको अविश्वसनीय काम र सृजनशीलताले खल्तीलाई नेपालको एक अग्रणी डिजिटल वालेट बनाउन मद्दत गरेको छ।</p>
+        <br><p style="font-weight: 900;">खल्तीको ७ साथ, सँगै अगाडि, सधैं अगाडि।</p>
+        <button id="cta-button" class="cta-button">अब यहाँ के छ?</button>
+    </div>
+</div>
+</body>
+<script>
+    document.getElementById('cta-button').addEventListener('click', function() {
+      var audio = document.getElementById('cta-audio');
+      audio.play();
+  
+      setTimeout(function() {
+        window.location.href = 'https://khalti.com/go/?t=jatra'; // Replace with your URL
+      }, 9000); // Redirect after 10000 milliseconds (10 seconds)
+    });
+  </script>
+</html>
